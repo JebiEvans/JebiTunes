@@ -1,0 +1,183 @@
+/*Hello designer am just a beginner and this is just for me to have fun*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:  cursive;
+  background-color: yellow;
+  background: linear-gradient(to left,red,yellow,green);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.app{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1{
+  margin: 50px 0px 30px 0px;
+  text-align: center;
+  font-size: 40px;
+}
+
+header P{
+  font-size: 20px;
+}
+
+.pads{
+  background: lightblue;
+  width: 100%;
+  display: flex;
+}
+
+.pads > div {
+  height: 100px;
+  width: 100px;
+  flex: 1;
+}
+#Vox:hover {
+  background-color: black;
+}
+
+#Lead:hover{
+  background-color: orange;
+}
+
+#Perc:hover{
+  background-color: indigo;;
+}
+
+#Pad:hover{
+  background-color: pink;
+}
+
+#Base:hover{
+  background-color: #d3d160;
+}
+
+#Drum:hover{
+  background-color: white;
+}
+.pad1 {
+  background: #60d394;
+  cursor: pointer;
+}
+
+.pad2{
+  background: #d36060;
+  cursor: pointer;
+}
+
+.pad3{
+  background: #c060d3;
+  cursor: pointer;
+}
+
+.pad4{
+  background: #ddd;
+  cursor: pointer;
+}
+
+.pad5{
+  background: #6860d3;
+  cursor: pointer;
+}
+
+.pad6{
+  background:  #60b2d3;
+}
+
+.visual > div{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  bottom: 0%;
+  left:20%;
+  bottom :0%;
+  z-index: -1;
+}
+
+@keyframes jump{
+  0%{
+    bottom:0%;
+    left:20%;
+  }
+  50%{
+    bottom: 50%;
+    left: 50%;
+  }
+  100%{
+    bottom: 0%;
+    left: 80%;
+  }
+}
+
+.visual > div{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  bottom: 0%;
+}
+
+.advert{
+  background: blue;
+  padding: 35px;
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  animation: advert 5s infinite;
+}
+
+@keyframes advert{
+  0%{
+    font-weight: bolder;
+    color: red;
+    transform: translateX(0px);
+  }
+  25%{
+    color: white;
+    background: red;
+    border-radius: 25%;
+    transform: translateX(30px);
+  }
+  50%{
+    color: yellow;
+    background: green;
+    border-radius: 35%;
+    transform: translateX(75px);
+  }
+  75%{
+    color: burlywood;
+    background: indigo;
+    border-radius: 20%;
+    transform: translateX(100px);
+}
+  100%{
+    background: magenta;
+    transform: translateX(-200px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
